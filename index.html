@@ -228,7 +228,7 @@
                 </div>
 
 
-                <div class="service-grid">
+                <div class="service-grid homepage-service-grid">
 
                     <article class="service-card">
 
@@ -281,6 +281,25 @@
 
                         <a href="commercial-overhead-doors.html">
                             Commercial Services
+                        </a>
+
+                    </article>
+
+
+                    <article class="service-card">
+
+                        <h3>
+                            Automatic Slide Gates
+                        </h3>
+
+                         <p>
+                            Automatic slide gate installation, repair, operator service,
+                             troubleshooting, adjustment, and preventive maintenance
+                            throughout the DFW area.
+                        </p>
+
+                    <a href="automatic-slide-gates.html">
+                            Automatic Gate Services
                         </a>
 
                     </article>
@@ -676,3 +695,18 @@
 
 </body>
 </html>
+/* =========================
+   HOMEPAGE SERVICE GRID
+========================= */
+
+@media (min-width: 700px) {
+    .homepage-service-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1000px) {
+    .homepage-service-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
