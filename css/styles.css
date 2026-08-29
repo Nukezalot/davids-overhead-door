@@ -816,3 +816,12 @@ button:focus-visible {
     display: block;
     object-fit: cover;
 }
+/* Garage Door Repair card uses the image's natural aspect ratio */
+.repair-card-image {
+    aspect-ratio: auto;
+}
+
+.repair-card-image img {
+    height: auto;
+    object-fit: initial;
+}
