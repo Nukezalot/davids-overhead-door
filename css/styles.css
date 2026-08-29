@@ -414,6 +414,7 @@ select {
     background: var(--color-light);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
+    overflow: hidden;
 }
 
 .service-card h3 {
@@ -793,6 +794,23 @@ button:focus-visible {
 }
 
 .hero-photo {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+/* =========================
+   HOMEPAGE SERVICE CARD IMAGES
+========================= */
+
+.service-card-image {
+    width: calc(100% + 56px);
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    margin: -28px -28px 1.25rem;
+}
+
+.service-card-image img {
     width: 100%;
     height: 100%;
     display: block;
