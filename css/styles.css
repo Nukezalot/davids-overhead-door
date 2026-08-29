@@ -825,3 +825,12 @@ button:focus-visible {
     height: auto;
     object-fit: initial;
 }
+/* Commercial Overhead Doors card uses the image's natural aspect ratio */
+.commercial-card-image {
+    aspect-ratio: auto;
+}
+
+.commercial-card-image img {
+    height: auto;
+    object-fit: initial;
+}
