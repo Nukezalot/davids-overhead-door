@@ -834,3 +834,18 @@ button:focus-visible {
     height: auto;
     object-fit: initial;
 }
+/* =========================
+   SERVICE PAGE CONTENT PHOTOS
+========================= */
+
+.content-photo {
+    width: 100%;
+    overflow: hidden;
+    border-radius: var(--border-radius);
+}
+
+.content-photo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
