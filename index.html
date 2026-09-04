@@ -31,26 +31,83 @@
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  "name": "David's Overhead Door",
-  "url": "https://www.davidsoverheaddoor.com/",
-  "telephone": "+1-214-995-5534",
-  "email": "David.Martinez@DavidsOverheadDoor.com",
-  "description": "Family-owned and operated residential and commercial garage door, overhead door, and automatic gate service company serving Irving and the Dallas-Fort Worth area.",
-  "areaServed": [
-    "Irving, Texas",
-    "Dallas, Texas",
-    "Fort Worth, Texas",
-    "Arlington, Texas",
-    "Grand Prairie, Texas",
-    "Carrollton, Texas",
-    "Farmers Branch, Texas",
-    "Coppell, Texas",
-    "Grapevine, Texas",
-    "Lewisville, Texas"
-  ],
-  "sameAs": [
-    "https://x.com/DoorDavids"
+  "@graph": [
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://www.davidsoverheaddoor.com/#business",
+      "name": "David's Overhead Door",
+      "url": "https://www.davidsoverheaddoor.com/",
+      "logo": "https://www.davidsoverheaddoor.com/images/branding/davids-overhead-door-logo-clean.png",
+      "image": "https://www.davidsoverheaddoor.com/images/branding/davids-overhead-door-logo-clean.png",
+      "telephone": "+1-214-995-5534",
+      "description": "Family-owned and operated garage door, commercial overhead door, opener, operator, and automatic gate service company serving Irving and the Dallas-Fort Worth area.",
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Irving"
+        },
+        {
+          "@type": "City",
+          "name": "Dallas"
+        },
+        {
+          "@type": "City",
+          "name": "Fort Worth"
+        },
+        {
+          "@type": "City",
+          "name": "Arlington"
+        },
+        {
+          "@type": "City",
+          "name": "Grand Prairie"
+        },
+        {
+          "@type": "City",
+          "name": "Carrollton"
+        },
+        {
+          "@type": "City",
+          "name": "Farmers Branch"
+        },
+        {
+          "@type": "City",
+          "name": "Coppell"
+        },
+        {
+          "@type": "City",
+          "name": "Grapevine"
+        },
+        {
+          "@type": "City",
+          "name": "Lewisville"
+        }
+      ],
+      "knowsAbout": [
+        "Residential garage doors",
+        "Garage door repair",
+        "Garage door installation",
+        "Commercial overhead doors",
+        "Commercial overhead door repair",
+        "Commercial overhead door installation",
+        "Garage door openers",
+        "Commercial door operators",
+        "Automatic slide gates",
+        "Automatic gate operators"
+      ],
+      "sameAs": [
+        "https://x.com/DoorDavids"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.davidsoverheaddoor.com/#website",
+      "url": "https://www.davidsoverheaddoor.com/",
+      "name": "David's Overhead Door",
+      "publisher": {
+        "@id": "https://www.davidsoverheaddoor.com/#business"
+      }
+    }
   ]
 }
 </script>
