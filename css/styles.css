@@ -501,6 +501,10 @@ select {
     color: var(--color-white);
 }
 
+.manufacturer-experience .eyebrow {
+    color: #d6dde2;
+}
+
 .manufacturer-experience .section-heading p:not(.eyebrow) {
     color: #d6dde2;
 }
