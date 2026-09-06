@@ -535,6 +535,10 @@ select {
     color: var(--color-white);
 }
 
+.final-cta .eyebrow {
+    color: #d7dee4;
+}
+
 .final-cta h2 {
     color: var(--color-white);
 }
@@ -557,73 +561,11 @@ select {
 
 
 /* =========================
-   GLOBAL LAYOUT
-========================= */
-
-.container {
-    width: min(100% - 32px, var(--container-width));
-    margin-inline: auto;
-}
-
-.container > * {
-    min-width: 0;
-}
-
-.hero-inner,
-.two-column,
-.footer-inner,
-.final-cta-inner,
-.service-grid,
-.city-grid {
-    min-width: 0;
-}
-
-.hero-content,
-.content-column,
-.footer-business,
-.footer-links,
-.footer-contact {
-    min-width: 0;
-}
-
-.section {
-    padding: var(--section-padding) 0;
-}
-
-.section-heading {
-    max-width: 760px;
-    margin-bottom: 40px;
-}
-
-.section-heading h2,
-.content-column h2,
-.final-cta h2 {
-    margin: 0 0 18px;
-    font-size: clamp(2rem, 5vw, 3rem);
-    line-height: 1.12;
-    color: var(--color-dark);
-}
-
-.section-heading p,
-.content-column p,
-.final-cta p {
-    color: var(--color-muted);
-}
-
-.eyebrow {
-    margin: 0 0 12px;
-    color: var(--color-primary);
-    font-size: 0.82rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-}
-/* =========================
    FOOTER
 ========================= */
 
 .site-footer {
-    background: var(--color-dark);
+    background: #10171e;
     color: var(--color-white);
     padding-top: 48px;
 }
@@ -644,7 +586,7 @@ select {
 
 .footer-business p {
     margin: 8px 0 0;
-    color: #d7dee4;
+    color: #d1d8de;
 }
 
 .footer-links {
@@ -678,7 +620,7 @@ select {
 
 .footer-bottom p {
     margin: 0;
-    color: #cfd7de;
+    color: #d1d8de;
     font-size: 0.9rem;
 }
 /* =========================
@@ -1074,31 +1016,4 @@ button:focus-visible {
 
 .footer-business-text p {
     margin: 8px 0 0;
-}
-/* =========================
-   RESTORE CTA & FOOTER COLORS
-========================= */
-
-.final-cta .eyebrow {
-    color: #d7dee4;
-}
-
-.final-cta h2 {
-    color: #ffffff;
-}
-
-.final-cta p {
-    color: #d7dee4;
-}
-
-.site-footer {
-    background: #10171e;
-}
-
-.footer-business p {
-    color: #d1d8de;
-}
-
-.footer-bottom p {
-    color: #d1d8de;
 }
