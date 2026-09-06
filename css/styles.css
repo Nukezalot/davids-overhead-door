@@ -990,8 +990,8 @@ button:focus-visible {
 }
 
 .footer-brand-row {
-    display: flex !important;
-    flex-direction: row !important;
+    display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: flex-start;
     gap: 18px;
