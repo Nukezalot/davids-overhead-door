@@ -172,14 +172,14 @@ select {
 
 .logo-name {
     color: var(--color-primary);
-    font-size: 1.5rem;
+    font-size: 1.7rem;
     font-weight: 800;
 }
 
 .logo-description {
-    margin-top: 4px;
+    margin-top: 5px;
     color: var(--color-dark);
-    font-size: 0.82rem;
+    font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.08em;
@@ -882,10 +882,10 @@ button:focus-visible {
 
 .site-logo-mark {
     display: block;
-    width: 38px;
-    height: 38px;
+    width: 72px;
+    height: 72px;
     object-fit: contain;
-    flex: 0 0 38px;
+    flex: 0 0 72px;
 }
 
 .site-logo-text {
