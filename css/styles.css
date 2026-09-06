@@ -557,66 +557,130 @@ select {
 
 
 /* =========================
+   GLOBAL LAYOUT
+========================= */
+
+.container {
+    width: min(100% - 32px, var(--container-width));
+    margin-inline: auto;
+}
+
+.container > * {
+    min-width: 0;
+}
+
+.hero-inner,
+.two-column,
+.footer-inner,
+.final-cta-inner,
+.service-grid,
+.city-grid {
+    min-width: 0;
+}
+
+.hero-content,
+.content-column,
+.footer-business,
+.footer-links,
+.footer-contact {
+    min-width: 0;
+}
+
+.section {
+    padding: var(--section-padding) 0;
+}
+
+.section-heading {
+    max-width: 760px;
+    margin-bottom: 40px;
+}
+
+.section-heading h2,
+.content-column h2,
+.final-cta h2 {
+    margin: 0 0 18px;
+    font-size: clamp(2rem, 5vw, 3rem);
+    line-height: 1.12;
+    color: var(--color-dark);
+}
+
+.section-heading p,
+.content-column p,
+.final-cta p {
+    color: var(--color-muted);
+}
+
+.eyebrow {
+    margin: 0 0 12px;
+    color: var(--color-primary);
+    font-size: 0.82rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+}
+/* =========================
    FOOTER
 ========================= */
 
 .site-footer {
-    padding: 48px 0 24px;
-    background: #10171e;
-    color: #d1d8de;
+    background: var(--color-dark);
+    color: var(--color-white);
+    padding-top: 48px;
 }
 
 .footer-inner {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 32px;
+    align-items: start;
 }
 
 .footer-business strong {
     display: block;
-    margin-bottom: 10px;
     color: var(--color-white);
-    font-size: 1.2rem;
+    font-size: 1.05rem;
+    font-weight: 800;
 }
 
 .footer-business p {
-    margin: 5px 0;
+    margin: 8px 0 0;
+    color: #d7dee4;
 }
 
 .footer-links {
-    display: flex;
-    flex-direction: column;
-    gap: 9px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px 24px;
 }
 
 .footer-links a,
 .footer-contact a {
-    color: #dce2e7;
+    color: var(--color-white);
     text-decoration: none;
-    overflow-wrap: anywhere;
-    word-break: break-word;
 }
 
 .footer-links a:hover,
 .footer-links a:focus-visible,
 .footer-contact a:hover,
 .footer-contact a:focus-visible {
-    color: var(--color-white);
+    text-decoration: underline;
 }
 
-.footer-contact a {
-    font-size: 1.3rem;
-    font-weight: 700;
+.footer-contact {
+    color: #d7dee4;
 }
 
 .footer-bottom {
-    margin-top: 32px;
-    padding-top: 22px;
-    border-top: 1px solid rgba(255, 255, 255, 0.13);
-    font-size: 0.86rem;
+    margin-top: 36px;
+    padding: 20px 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
 
-
+.footer-bottom p {
+    margin: 0;
+    color: #cfd7de;
+    font-size: 0.9rem;
+}
 /* =========================
    FOCUS / ACCESSIBILITY
 ========================= */
@@ -651,6 +715,10 @@ button:focus-visible {
     .footer-inner {
         grid-template-columns: 2fr 1fr 1fr;
     }
+    
+    .footer-links {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 
 }
 
@@ -679,10 +747,10 @@ button:focus-visible {
     }
 
     .hero-inner {
-    grid-template-columns:
-        minmax(0, 1.1fr)
-        minmax(400px, 0.9fr);
-}
+        grid-template-columns:
+            minmax(0, 1.1fr)
+            minmax(400px, 0.9fr);
+    }
 
     .two-column {
         grid-template-columns:
@@ -698,6 +766,13 @@ button:focus-visible {
         grid-template-columns:
             minmax(0, 1fr)
             auto;
+    }
+
+    .footer-inner {
+        grid-template-columns:
+            minmax(0, 3fr)
+            minmax(220px, 1.1fr)
+            minmax(290px, 1.2fr);
     }
 
 }
@@ -963,4 +1038,67 @@ button:focus-visible {
     .manufacturer-logo-grid {
         grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+}
+/* =========================
+   FOOTER LOGO
+========================= */
+
+.footer-business {
+    display: block;
+}
+
+.footer-brand-row {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+}
+
+.footer-logo {
+    display: block;
+    width: 72px;
+    height: 72px;
+    object-fit: contain;
+    flex: 0 0 72px;
+    margin: 0;
+}
+
+.footer-business-text {
+    min-width: 0;
+}
+
+.footer-business-text strong {
+    display: block;
+}
+
+.footer-business-text p {
+    margin: 8px 0 0;
+}
+/* =========================
+   RESTORE CTA & FOOTER COLORS
+========================= */
+
+.final-cta .eyebrow {
+    color: #d7dee4;
+}
+
+.final-cta h2 {
+    color: #ffffff;
+}
+
+.final-cta p {
+    color: #d7dee4;
+}
+
+.site-footer {
+    background: #10171e;
+}
+
+.footer-business p {
+    color: #d1d8de;
+}
+
+.footer-bottom p {
+    color: #d1d8de;
 }
