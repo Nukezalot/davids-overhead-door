@@ -161,8 +161,11 @@ select {
 }
 
 .site-logo {
-    display: flex;
-    flex-direction: column;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
     text-decoration: none;
     line-height: 1;
 }
@@ -336,6 +339,11 @@ select {
     color: #737f89;
     border: 1px solid #ccd2d7;
     font-weight: 700;
+}
+
+.hero-image-placeholder {
+    overflow: hidden;
+    padding: 0;
 }
 
 
@@ -748,7 +756,9 @@ button:focus-visible {
 ========================= */
 
 .contact-card {
+    position: relative;
     padding: 32px;
+    padding-right: 220px;
     background: var(--color-light);
     border: 1px solid var(--color-border);
     border-radius: var(--border-radius);
@@ -804,11 +814,6 @@ button:focus-visible {
 /* =========================
    REAL HERO PHOTOS
 ========================= */
-
-.hero-image-placeholder {
-    overflow: hidden;
-    padding: 0;
-}
 
 .hero-photo {
     width: 100%;
@@ -870,13 +875,6 @@ button:focus-visible {
    HEADER BRAND LOGO
 ========================= */
 
-.site-logo {
-    display: inline-flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    gap: 8px;
-}
 
 .site-logo-mark {
     display: block;
@@ -904,11 +902,6 @@ button:focus-visible {
 /* =========================
    CONTACT CARD LOGO
 ========================= */
-
-.contact-card {
-    position: relative;
-    padding-right: 220px;
-}
 
 .contact-card-logo {
     position: absolute;
@@ -985,10 +978,6 @@ button:focus-visible {
    FOOTER LOGO
 ========================= */
 
-.footer-business {
-    display: block;
-}
-
 .footer-brand-row {
     display: flex;
     flex-direction: row;
@@ -1008,12 +997,4 @@ button:focus-visible {
 
 .footer-business-text {
     min-width: 0;
-}
-
-.footer-business-text strong {
-    display: block;
-}
-
-.footer-business-text p {
-    margin: 8px 0 0;
 }
